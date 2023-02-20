@@ -45,7 +45,7 @@ function Payment() {
   let token = localStorage.getItem('login-token');
 
   useEffect(() => {
-    fetch('http://10.58.52.186:3000/users', {
+    fetch('http://52.78.118.58:3000/users', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
@@ -57,7 +57,7 @@ function Payment() {
   }, []);
 
   useEffect(() => {
-    fetch('http://10.58.52.186:3000/carts/price', {
+    fetch('http://52.78.118.58:3000/carts/price', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
@@ -69,7 +69,7 @@ function Payment() {
   }, []);
 
   useEffect(() => {
-    fetch('http://10.58.52.186:3000/carts', {
+    fetch('http://52.78.118.58:3000/carts', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
@@ -87,7 +87,7 @@ function Payment() {
 
   const onClickPay = e => {
     e.preventDefault();
-    fetch('http://10.58.52.186:3000/orders', {
+    fetch('http://52.78.118.58:3000/orders', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',

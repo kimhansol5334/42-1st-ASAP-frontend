@@ -22,7 +22,7 @@ export default function BodyList() {
 
   //TODO: API 연결 시 동작할 코드
   useEffect(() => {
-    fetch('http://10.58.52.186:3000/products/2/13', {
+    fetch('http://52.78.118.58:3000/products/2/13', {
       method: 'GET',
     })
       .then(res => res.json())
@@ -33,7 +33,7 @@ export default function BodyList() {
 
   useEffect(() => {
     fetch(
-      `http://10.58.52.186:3000/products/2/13?formulation=${formulations}&scent=${scents}&ingredient${ingredient}`,
+      `http://52.78.118.58:3000/products/2/13?formulation=${formulations}&scent=${scents}&ingredient${ingredient}`,
       {
         method: 'GET',
       }

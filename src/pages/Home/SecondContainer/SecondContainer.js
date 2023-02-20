@@ -7,7 +7,7 @@ const SecondContainer = () => {
   const [productList, setProductList] = useState([]);
 
   useEffect(() => {
-    fetch('http://10.58.52.186:3000/products?limit=5')
+    fetch('http://52.78.118.58:3000/products?limit=5')
       .then(res => res.json())
       .then(data => {
         setProductList(data.data);

@@ -17,7 +17,7 @@ const ProductDetail = () => {
   const token = localStorage.getItem('login-token');
 
   useEffect(() => {
-    fetch(`http://10.58.52.186:3000/products/detail/${params.id}`)
+    fetch(`http://52.78.118.58:3000/products/detail/${params.id}`)
       .then(res => res.json())
       .then(data => setDetailData(data.data[0]));
   }, []);
@@ -42,7 +42,7 @@ const ProductDetail = () => {
 
   const onSubmitCart = event => {
     event.preventDefault();
-    fetch('http://10.58.52.186:3000/carts', {
+    fetch('http://52.78.118.58:3000/carts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',

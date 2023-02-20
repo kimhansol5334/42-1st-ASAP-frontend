@@ -24,7 +24,7 @@ const Nav = () => {
   }, []);
 
   useEffect(() => {
-    fetch('http://10.58.52.186:3000/carts/quantity', {
+    fetch('http://52.78.118.58:3000/carts/quantity', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
