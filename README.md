@@ -1,4 +1,4 @@
-​
+42기 김한솔​
 
 ## oo 프로젝트 Front-end/Back-end 소개
 
